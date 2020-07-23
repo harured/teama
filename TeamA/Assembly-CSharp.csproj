@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Conference Room\Scripts\RotateMoveCamera.cs" />
+     <Compile Include="Assets\Scripts\Main.cs" />
      <None Include="Assets\Conference Room\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/akira/workspace/teama/TeamA/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
