@@ -1,3 +1,46 @@
+<<<<<<< HEAD
+# =============== #
+# Unity generated #
+# =============== #
+/TeamA/Temp/
+/TeamA/Obj/
+/TeamA/UnityGenerated/
+/TeamA/Library
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# ============ #
+# for others   #
+# ============ #
+
+*.log #log files, for some plugins
+*.pyc #python bytecode cache, for some plugins.
+sysinfo.txt #Unity3D Generated File On Crash Reports
+=======
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -58,3 +101,4 @@ ML/Warehouse/__pycache__
 
 # Statistics Path
 /[Ss]tatistics/
+>>>>>>> 383d6f9b9f61074b542dc73e987d8c9b74851a6c
