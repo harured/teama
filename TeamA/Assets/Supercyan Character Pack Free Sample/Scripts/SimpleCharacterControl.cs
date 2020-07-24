@@ -113,22 +113,14 @@ public class SimpleCharacterControl : MonoBehaviour {
     {
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
-        
-        bool walk = Input.GetKey(KeyCode.LeftShift);
-        
-        if (v < 0) {
-            if (walk) { v *= m_backwardsWalkScale; }
-            else { v *= m_backwardRunScale; }
-        } else if(walk)
+
+        if ( Main.react == 1)
         {
             v *= m_walkScale;
         }
         
         m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
         m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
-        
-        transform.position += transform.forward * m_currentV * m_moveSpeed * Time.deltaTime;
-        transform.Rotate(0, m_currentH * m_turnSpeed * Time.deltaTime, 0);
         
         m_animator.SetFloat("MoveSpeed", m_currentV);
 
@@ -142,7 +134,7 @@ public class SimpleCharacterControl : MonoBehaviour {
 
         Transform camera = Camera.main.transform;
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if ( Main.react == 1)
         {
             v *= m_walkScale;
             h *= m_walkScale;
@@ -174,7 +166,7 @@ public class SimpleCharacterControl : MonoBehaviour {
     {
         bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
 
-        if (jumpCooldownOver && m_isGrounded && Main.react)
+        if (jumpCooldownOver && m_isGrounded && Main.react == 2)
         {
             m_jumpTimeStamp = Time.time;
             m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);

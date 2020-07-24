@@ -6,7 +6,7 @@ namespace DefaultNamespace
 
     public class Main : MonoBehaviour
     {
-        public static bool react;
+        public static int react;
 
         //pythonがある場所
         private string pyExePath = @"/Users/akira/workspace/teama/dist/main\main";
@@ -44,11 +44,15 @@ namespace DefaultNamespace
         void Update () {
             if (Input.GetKey("up"))
             {
-                react = true;
+                react = 2;
+            } 
+            else if (Input.GetKey("down"))
+            {
+                react = 1;
             }
             else
             {
-                react = false;
+                react = 0;
             }
         }
     }
