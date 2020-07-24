@@ -391,6 +391,7 @@
      <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
      <Compile Include="Assets\Scripts\Main.cs" />
      <Compile Include="Assets\Scripts\Model.cs" />
+     <Compile Include="Assets\Scripts\Voice.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
